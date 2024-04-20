@@ -1,0 +1,6 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixis';
+
+h2{
+    @include mixis.titulo();
+}

@@ -1,0 +1,6 @@
+@use './mixis';
+
+.container {
+    @include mixis.container();
+}
+

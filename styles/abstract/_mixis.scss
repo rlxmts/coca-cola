@@ -1,0 +1,35 @@
+@use './variaveis';
+
+@mixin container(){
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 60px;
+    transition: .5s;
+    border-radius: 50%;
+    border: none;
+}
+.logo:hover{
+    width: 58px;
+    border: solid 1px variaveis.$vermelho;
+    box-shadow: 0px 0px 10px variaveis.$vermelho;
+    cursor: pointer;
+
+    &::after{
+        contain: 'Não clicar';
+        background-color: variaveis.$vermelho;
+        width: 40px;
+        height: 20px;
+        display: block;
+    }
+}
+@mixin titulo(){
+    font-family: variaveis.$font-titulos;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
