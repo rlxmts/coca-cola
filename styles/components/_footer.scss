@@ -3,4 +3,15 @@
 
 .rodape{
     background-color: variaveis.$preto;
+    @include mixins.flex-fd-jc-fw( row, space-between, wrap);
+    width: 100%;
+    div{
+        padding-top: 4rem;
+    }
+    img{
+        width: 100%;
+    }
+    .logo_rodape{
+        width: 120px;
+    }
 }
