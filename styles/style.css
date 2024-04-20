@@ -135,7 +135,7 @@
   justify-content: normal;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   align-items: start;
 }
 .home_propaganda a {
@@ -192,4 +192,49 @@
   color: white;
   transition: 0.4s;
   cursor: pointer;
+}
+
+.propaganda {
+  background-color: #000;
+  color: white;
+  width: 100%;
+}
+.propaganda div {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  align-items: start;
+}
+.propaganda div h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #db3534;
+  line-height: 1.4rem;
+  text-align: center;
+  text-align: start;
+  letter-spacing: 0.4rem;
+}
+.propaganda div h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.propaganda div a {
+  border: 1px solid #000;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  background-color: #000;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.propaganda img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

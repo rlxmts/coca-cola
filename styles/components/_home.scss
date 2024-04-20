@@ -16,7 +16,7 @@
     &_propaganda{
         @include mixins.flex-fd-jc-fw(column, normal, wrap);
         gap: 1rem;
-        padding: 3rem 1rem;
+        padding: 5rem 1rem;
         align-items: start;
 
         a{

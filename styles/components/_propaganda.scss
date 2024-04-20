@@ -1,0 +1,33 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.propaganda {
+    background-color: variaveis.$preto;
+    color: variaveis.$branco;
+    width: 100%;
+    div{
+        @include mixins.flex-fd-jc-fw(column, normal, wrap);
+        gap: 1.5rem;
+        @include mixins.container();
+        padding: 3rem 0;
+        align-items: start;
+
+        h2{
+            @include mixins.subtitulo-cl(variaveis.$vermelho);
+            text-align: start;
+            letter-spacing: .4rem;
+        }
+        h3{
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+        }
+        a{
+            @include mixins.botao();
+            border: 1px solid variaveis.$branco;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
