@@ -1,0 +1,30 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.cadastro{
+    @include mixins.flex-fd-jc-fw(column-reverse, normal, wrap);
+    width: 100%;
+    background-color: variaveis.$vermelho;
+
+    img{
+        width: 100%;
+    }
+    div{
+        @include mixins.container();
+        @include mixins.flex-fd-jc-fw(column, normal, wrap);
+        gap: 2rem;
+        align-items: end;
+        color: variaveis.$branco;
+        padding: 3rem 0;
+        h3{
+            font-size: 1.4rem;
+        }
+        a{
+            @include mixins.botao();
+            background-color: variaveis.$branco;
+            color: variaveis.$preto;
+            border: none;
+            font-weight: 600;
+        }
+    }
+}
