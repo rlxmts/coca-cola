@@ -1,0 +1,6 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.rodape{
+    background-color: variaveis.$preto;
+}
