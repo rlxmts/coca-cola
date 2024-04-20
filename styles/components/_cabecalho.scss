@@ -20,12 +20,13 @@
     }
     .menu{  
 
-        overflow-x: hidden;
-        
+        input{
+            display: none;
+        }        
         input:checked ~ .menu_navegacao{
-            right: 0;
+            right: -2rem;
         }
-
+        
         .menu_navegacao{
             position: absolute;
             top: 0;
@@ -34,6 +35,34 @@
             width: 100vw;
             height: 100vh;
             transition: 1s;
+            padding-top: 5rem;
+            padding-left: 2rem;
+
+            .menu_login{
+                padding-bottom: 2rem;
+                .icone_login{
+                        display: none;
+                }
+                span{
+                        transition: .4s;
+                        cursor: pointer;
+                        font-size: 1.1rem;
+                        color: variaveis.$branco;
+                        padding-bottom: 2rem;
+                        &:hover{
+                            color: variaveis.$preto;
+                        }
+                  }
+                
+            }
+            .menu_lista{
+                a{
+                    color: variaveis.$branco;
+                    display: block;
+                    padding-bottom: 1rem;
+                    font-size: .9rem;
+                }
+            }
         }
         .mobile_bt{
             display: flex;
@@ -42,17 +71,35 @@
             gap: 5px;
             position: absolute;
             top: 20px;
-            right: 60px;
-
+            right: 60px;           
+            
             .bt_barra{
                 display: block;
                 width: 25px;
                 height: 3px;
                 background-color: variaveis.$preto;
+                transition: .4s;
             }
+        }
+        .ativa .bt_barra:nth-child(2){            
+            background-color: variaveis.$branco;
+            transition: .4s;
+            transform: translateX(100px); 
+            opacity: .3;           
+        }
+        .ativa .bt_barra:nth-child(1){            
+            background-color: variaveis.$branco;
+            transition: .7s;
+            transform: translateY(10px) rotate(45deg);          
+        }
+        .ativa .bt_barra:nth-child(3){            
+            background-color: variaveis.$branco;
+            transition: .7s;
+            transform: translateY(-6px) rotate(-45deg);          
         }
     }
 }
 .container{
     @include mixins.container();
 }
+

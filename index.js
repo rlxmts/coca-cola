@@ -7,3 +7,8 @@ logo.addEventListener( 'click', ()=> {
     imagemMao.classList.add('ativa');
 })
 
+const btnMenu = document.getElementById('bt-menu');
+
+btnMenu.addEventListener( 'click', ()=> {
+    btnMenu.classList.toggle('ativa');
+})

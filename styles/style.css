@@ -25,11 +25,11 @@
   width: 43px;
   box-shadow: 0px 0px 10px #db3534;
 }
-.cabecalho .menu {
-  overflow-x: hidden;
+.cabecalho .menu input {
+  display: none;
 }
 .cabecalho .menu input:checked ~ .menu_navegacao {
-  right: 0;
+  right: -2rem;
 }
 .cabecalho .menu .menu_navegacao {
   position: absolute;
@@ -39,6 +39,30 @@
   width: 100vw;
   height: 100vh;
   transition: 1s;
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+.cabecalho .menu .menu_navegacao .menu_login {
+  padding-bottom: 2rem;
+}
+.cabecalho .menu .menu_navegacao .menu_login .icone_login {
+  display: none;
+}
+.cabecalho .menu .menu_navegacao .menu_login span {
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+.cabecalho .menu .menu_navegacao .menu_login span:hover {
+  color: #000;
+}
+.cabecalho .menu .menu_navegacao .menu_lista a {
+  color: white;
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 .cabecalho .menu .mobile_bt {
   display: flex;
@@ -54,6 +78,23 @@
   width: 25px;
   height: 3px;
   background-color: #000;
+  transition: 0.4s;
+}
+.cabecalho .menu .ativa .bt_barra:nth-child(2) {
+  background-color: white;
+  transition: 0.4s;
+  transform: translateX(100px);
+  opacity: 0.3;
+}
+.cabecalho .menu .ativa .bt_barra:nth-child(1) {
+  background-color: white;
+  transition: 0.7s;
+  transform: translateY(10px) rotate(45deg);
+}
+.cabecalho .menu .ativa .bt_barra:nth-child(3) {
+  background-color: white;
+  transition: 0.7s;
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .container {
