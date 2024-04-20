@@ -1,56 +1,63 @@
-@charset "UTF-8";
-.logo {
-  width: 60px;
-  transition: 0.5s;
-  border-radius: 50%;
-  border: none;
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
 }
 
-.logo:hover {
-  width: 58px;
-  border: solid 1px #db3534;
-  box-shadow: 0px 0px 10px #db3534;
-  cursor: pointer;
+.cabecalho {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.logo:hover::after {
-  contain: "Não clicar";
+.cabecalho .logo {
+  width: 45px;
+  transition: 0.5s;
+  border-radius: 50%;
+  border: 1px solid white;
+  z-index: 999;
+}
+.cabecalho .logo:hover {
+  width: 43px;
+  box-shadow: 0px 0px 10px #db3534;
+}
+.cabecalho .menu {
+  overflow-x: hidden;
+}
+.cabecalho .menu input:checked ~ .menu_navegacao {
+  right: 0;
+}
+.cabecalho .menu .menu_navegacao {
+  position: absolute;
+  top: 0;
   background-color: #db3534;
-  width: 40px;
-  height: 20px;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+}
+.cabecalho .menu .mobile_bt {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+.cabecalho .menu .mobile_bt .bt_barra {
   display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
 }
 
 .container {
   max-width: 1200px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-}
-
-.ativa {
-  display: block;
-  position: absolute;
-  right: 10px;
-  bottom: -100%;
-  animation-name: animacao;
-  animation-duration: 4s;
-}
-
-@keyframes animacao {
-  0% {
-    bottom: -100%;
-    display: block;
-  }
-  50% {
-    bottom: 0;
-  }
-  100% {
-    bottom: -100%;
-  }
-}
-h2 {
-  font-family: "poppins", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }/*# sourceMappingURL=style.css.map */

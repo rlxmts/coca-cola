@@ -1,0 +1,22 @@
+@use './variaveis';
+
+@mixin container(){
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin titulo(){
+    font-family: variaveis.$font-titulos;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@mixin flex-fd-jc-fw( $direcao, $alinhamento, $flexwrap){
+    display: flex;
+    flex-direction: $direcao;
+    justify-content: $alinhamento;
+    flex-wrap: $flexwrap;
+}

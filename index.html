@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="index.js" defer></script>
     <title>Matheus Cruz - Front-end Developer</title>
 </head>
 <body>
     <main>
-        <header class="cabecalho">
-            <nav class="menu menu container">
-                <logo id="logo" class="menu_logo"><img class="logo" src="./assets/img/logo.png" alt="logo da coca-cola"></logo>
-                <ul class="menu_lista lista">
-                    <li class="lista_item item"><a href="#" class="item_link">Ofertas</a></li>
-                    <li class="lista_item item"><a href="#" class="item_link">Promoções</a></li>
-                    <li class="lista_item item"><a href="#" class="item_link">Dá o play</a></li>
-                    <li class="lista_item item"><a href="#" class="item_link">Retornáveis</a></li>
-                    <li class="lista_item item"><a href="#" class="item_link">Loja</a></li>
-                </ul>
-                <div class="menu_login">
-                    <img src="" alt="icone de login">
-                    <span>Entrar</span>
-                </div>
+        <header class="cabecalho container">
+            <logo id="logo" class="menu_logo"><img class="logo" src="./assets/img/logo.png" alt="logo da coca-cola"></logo>
+            <nav class="menu">
+                <input type="checkbox" id="input-menu">
+                <label for="input-menu">
+                    <div class="mobile_bt bt">
+                        <span class="bt_barra"></span>
+                        <span class="bt_barra"></span>
+                        <span class="bt_barra"></span>
+                    </div>
+                </label>
+                <div id="" class="menu_navegacao">
+                    <div class="menu_login">
+                        <a href="#">
+                            <img src="./assets/icons/adicionar-usuario.png" alt="icone de login">
+                            <span>Entrar</span>
+                        </a>
+                    </div>
+                    <ul class="menu_lista lista">
+                        <li class="lista_item item"><a href="#" class="item_link">Ofertas</a></li>
+                        <li class="lista_item item"><a href="#" class="item_link">Promoções</a></li>
+                        <li class="lista_item item"><a href="#" class="item_link">Dá o play</a></li>
+                        <li class="lista_item item"><a href="#" class="item_link">Retornáveis</a></li>
+                        <li class="lista_item item"><a href="#" class="item_link">Loja</a></li>
+                    </ul>
+                </div>                 
             </nav>            
         </header>
         <section class="slider">
