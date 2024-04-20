@@ -1,0 +1,40 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.home{
+    @include mixins.flex-fd-jc-fw( column-reverse, normal, wrap);
+    div{
+        width:100vw;
+        img{
+            max-width: 100%;
+        }
+    }
+    &_img{
+        background: rgb(253,29,29);
+        background: linear-gradient(90deg, rgba(253,29,29,1) 13%, rgba(252,176,69,1) 100%);
+    }
+    &_propaganda{
+        @include mixins.flex-fd-jc-fw(column, normal, wrap);
+        gap: 1rem;
+        padding: 3rem 1rem;
+        align-items: start;
+
+        a{
+            border: 1px solid variaveis.$preto;
+            padding: .7rem 1rem;
+            border-radius: 25px;
+            background-color: variaveis.$preto;
+            color: white;
+            transition: .4s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: variaveis.$vermelho;
+                border: none;
+            }
+        }
+        span{
+            font-size: .7rem;
+        }
+    }
+}
