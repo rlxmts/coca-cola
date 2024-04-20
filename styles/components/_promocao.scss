@@ -1,0 +1,30 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.promocao{
+    @include mixins.flex-fd-jc-fw(column-reverse, normal, nowrap);
+
+    div{
+        @include mixins.flex-fd-jc-fw(column, normal, wrap);
+        @include mixins.container();
+        gap: 1rem;
+        align-items: start;
+        padding: 3rem 0;
+        h2{
+            @include mixins.subtitulo-cl(variaveis.$vermelho);
+            text-align: start;
+            letter-spacing: .4rem;
+            text-transform: uppercase;
+        }
+        h3{
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+        }
+        a{
+            @include mixins.botao();
+            border: 1px solid variaveis.$branco;
+            margin-top: 2rem;
+        }
+    }
+}
