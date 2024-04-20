@@ -1,6 +1,22 @@
 @use './mixis';
+@use './variaveis';
 
 .container {
     @include mixis.container();
 }
 
+
+.ativa{
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: -100%;
+    animation-name: animacao;
+    animation-duration: 4s;
+}
+
+@keyframes animacao{
+    0% {bottom: -100%; display: block;}
+    50%{bottom: 0;};
+    100%{bottom:-100%}
+}
