@@ -24,7 +24,7 @@
             display: none;
         }        
         input:checked ~ .menu_navegacao{
-            right: -2rem;
+            right: 0;
         }
         
         .menu_navegacao{
@@ -36,10 +36,10 @@
             height: 100vh;
             transition: 1s;
             padding-top: 5rem;
-            padding-left: 2rem;
 
             .menu_login{
                 padding-bottom: 2rem;
+                padding-left: 2rem;
                 .icone_login{
                         display: none;
                 }
@@ -60,6 +60,7 @@
                     color: variaveis.$branco;
                     display: block;
                     padding-bottom: 1rem;
+                    padding-left: 2rem;
                     font-size: .9rem;
                 }
             }

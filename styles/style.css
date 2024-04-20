@@ -32,7 +32,7 @@
   display: none;
 }
 .cabecalho .menu input:checked ~ .menu_navegacao {
-  right: -2rem;
+  right: 0;
 }
 .cabecalho .menu .menu_navegacao {
   position: absolute;
@@ -43,10 +43,10 @@
   height: 100vh;
   transition: 1s;
   padding-top: 5rem;
-  padding-left: 2rem;
 }
 .cabecalho .menu .menu_navegacao .menu_login {
   padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 .cabecalho .menu .menu_navegacao .menu_login .icone_login {
   display: none;
@@ -65,6 +65,7 @@
   color: white;
   display: block;
   padding-bottom: 1rem;
+  padding-left: 2rem;
   font-size: 0.9rem;
 }
 .cabecalho .menu .mobile_bt {
