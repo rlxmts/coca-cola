@@ -20,13 +20,7 @@
         align-items: start;
 
         a{
-            border: 1px solid variaveis.$preto;
-            padding: .7rem 1rem;
-            border-radius: 25px;
-            background-color: variaveis.$preto;
-            color: white;
-            transition: .4s;
-            cursor: pointer;
+            @include mixins.botao();
 
             &:hover{
                 background-color: variaveis.$vermelho;

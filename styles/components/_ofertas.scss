@@ -1,0 +1,23 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.ofertas{
+    background-color: variaveis.$cinza-claro;
+
+    div{
+        @include mixins.container();
+        @include mixins.flex-fd-jc-fw(column, normal, wrap);
+        align-items: center;
+        gap: 1.2rem;
+        padding: 3rem 0;
+        h3{
+            @include mixins.titulo();
+        }
+        h4{
+            @include mixins.subtitulo-cl(variaveis.$preto)
+        }
+        a{
+            @include mixins.botao();
+        }
+    }
+}

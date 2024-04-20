@@ -8,7 +8,7 @@
 
 @mixin titulo(){
     font-family: variaveis.$font-titulos;
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -19,4 +19,22 @@
     flex-direction: $direcao;
     justify-content: $alinhamento;
     flex-wrap: $flexwrap;
+}
+
+@mixin subtitulo-cl($cor){
+    font-size: 1rem;
+    font-weight: 600;
+    color: $cor;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+@mixin botao(){
+    border: 1px solid variaveis.$preto;
+    padding: .7rem 1rem;
+    border-radius: 25px;
+    background-color: variaveis.$preto;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
 }

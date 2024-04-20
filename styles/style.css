@@ -40,15 +40,15 @@
   position: absolute;
   top: 0;
   background-color: #db3534;
-  right: -100%;
+  right: -120%;
   width: 100vw;
   height: 100vh;
   transition: 1s;
   padding-top: 5rem;
 }
 .cabecalho .menu .menu_navegacao .menu_login {
-  padding-bottom: 2rem;
-  padding-left: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 .cabecalho .menu .menu_navegacao .menu_login .icone_login {
   display: none;
@@ -66,8 +66,8 @@
 .cabecalho .menu .menu_navegacao .menu_lista a {
   color: white;
   display: block;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
   font-size: 0.9rem;
 }
 .cabecalho .menu .mobile_bt {
@@ -153,4 +153,43 @@
 }
 .home_propaganda span {
   font-size: 0.7rem;
+}
+
+.ofertas {
+  background-color: #f1f1f1;
+}
+.ofertas div {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 3rem 0;
+}
+.ofertas div h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.ofertas div h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4rem;
+  text-align: center;
+}
+.ofertas div a {
+  border: 1px solid #000;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  background-color: #000;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

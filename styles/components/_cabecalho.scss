@@ -34,15 +34,15 @@
             position: absolute;
             top: 0;
             background-color: variaveis.$vermelho;
-            right: -100%;
+            right: -120%;
             width: 100vw;
             height: 100vh;
             transition: 1s;
             padding-top: 5rem;
 
             .menu_login{
-                padding-bottom: 2rem;
-                padding-left: 2rem;
+                margin-bottom: 2rem;
+                margin-left: 2rem;
                 .icone_login{
                         display: none;
                 }
@@ -62,8 +62,8 @@
                 a{
                     color: variaveis.$branco;
                     display: block;
-                    padding-bottom: 1rem;
-                    padding-left: 2rem;
+                    padding: 1rem;
+                    margin-left: 1rem;
                     font-size: .9rem;
                 }
             }
