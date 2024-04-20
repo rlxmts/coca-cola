@@ -8,6 +8,7 @@
 }
 
 .cabecalho {
+  height: 4rem;
   width: 100%;
   padding: 0.5rem 0;
   display: flex;
@@ -21,6 +22,9 @@
   border-radius: 50%;
   border: 1px solid white;
   z-index: 999;
+  position: absolute;
+  top: 10px;
+  left: 25px;
 }
 .cabecalho .logo:hover {
   width: 43px;
