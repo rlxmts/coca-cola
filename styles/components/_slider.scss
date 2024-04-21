@@ -4,14 +4,14 @@
 .slider{
     position: relative;
     width: 100vw;
-    height: 400px;
+    height: 600px;
     .slider_caixa{
         .caixa_img{
             padding: 2rem;
             display: block;
-            height: 400px;
+            height: 600px;
             width: 100%;
-            @include mixins.flex-fd-jc-fw( column, end, nowrap);
+            @include mixins.flex-fd-jc-fw( column, center, nowrap);
             align-items: start;
             position: absolute;
             top: 0;
@@ -44,11 +44,17 @@
             }
         }
         .img1{
-            background-image: url('../../assets/img/game.png');
+            background-image: url('../../assets/img/game-mobile.png');
             background-position:right;
             background-repeat: no-repeat;
-            background-size: cover;
+            justify-content: start;
+            padding-top: 6rem;
 
+            a{
+                margin-top: 1rem;
+                color: variaveis.$branco;
+                background-color: variaveis.$vermelho;
+            }
         }
         .img2{
             display: none;
