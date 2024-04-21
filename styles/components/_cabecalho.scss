@@ -13,7 +13,7 @@
         border-radius: 50%;
         border: 1px solid variaveis.$branco;
         z-index: 999;
-        position: absolute;
+        position: fixed;
         top: 10px;
         left: 25px;
         &:hover{
@@ -27,20 +27,19 @@
             display: none;
         }        
         input:checked ~ .menu_navegacao{
-            top: 0;
+            right: 0;
         
         }
         
         .menu_navegacao{
-            position: absolute;
+            position: fixed;
             top: 0;
             background-color: variaveis.$vermelho;
-            top: -150%;
             width: 100vw;
             height: 100vh;
             transition: 1s;
             padding-top: 5rem;
-            left: 0;
+            right: -100%;
 
             .menu_login{
                 margin-bottom: 2rem;
@@ -54,6 +53,7 @@
                         font-size: 1.1rem;
                         color: variaveis.$branco;
                         padding-bottom: 2rem;
+
                         &:hover{
                             color: variaveis.$preto;
                         }
@@ -75,7 +75,7 @@
             flex-direction: column;
             z-index: 999;
             gap: 5px;
-            position: absolute;
+            position:fixed;
             top: 25px;
             right: 20px;           
             
