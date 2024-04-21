@@ -35,7 +35,7 @@
         }
         
         .menu_navegacao{
-            background-color: transparent;
+            background-color: variaveis.$vermelho;
             position: fixed;
             top: 0;
             width: 100vw;
@@ -127,7 +127,7 @@
                 @include mixins.flex-fd-jc-fw(row-reverse, center, wrap);
                 align-items: center;
                 gap: 2rem;
-
+                background-color: transparent;
                 .menu_login{
                     display: flex;
                     margin: 0;
