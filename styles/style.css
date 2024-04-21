@@ -228,6 +228,7 @@ body {
   background-image: url("../../assets/img/game-mobile.png");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: cover;
   justify-content: start;
   padding-top: 6rem;
 }
@@ -240,6 +241,11 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .slider {
+    display: none;
+  }
+}
 .home {
   display: flex;
   flex-direction: column-reverse;
