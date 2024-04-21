@@ -525,9 +525,6 @@ body {
   flex-wrap: wrap;
   text-align: center;
 }
-.rodape .rodape_cols .rodape_lista li {
-  border-bottom: 1px solid white;
-}
 .rodape .rodape_cols .rodape_lista li a {
   padding: 1rem;
   display: block;
