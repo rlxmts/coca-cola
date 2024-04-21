@@ -3,6 +3,7 @@
 
 .rodape{
     background-color: variaveis.$preto;
+    padding-bottom: 14rem;
     .rodape_cols{
         margin-top: 4rem;
         width: 100%;
@@ -50,10 +51,13 @@
                 background-size: 23px;
                 background-position: center;
                 background-repeat: no-repeat;
-            }
-        }
+            } 
+        } 
+    } 
+    .logo_rodape{ 
+        width: 120px; 
+    } 
+    .mao-lata{
+        display: none;
     }
-    .logo_rodape{
-        width: 120px;
-    }
-}
+} 

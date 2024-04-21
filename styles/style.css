@@ -376,6 +376,7 @@ body {
 
 .rodape {
   background-color: #000;
+  padding-bottom: 14rem;
 }
 .rodape .rodape_cols {
   margin-top: 4rem;
@@ -432,4 +433,7 @@ body {
 }
 .rodape .logo_rodape {
   width: 120px;
+}
+.rodape .mao-lata {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
