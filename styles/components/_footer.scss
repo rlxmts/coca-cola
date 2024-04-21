@@ -3,13 +3,55 @@
 
 .rodape{
     background-color: variaveis.$preto;
-    @include mixins.flex-fd-jc-fw( row, space-between, wrap);
-    width: 100%;
-    div{
-        padding-top: 4rem;
-    }
-    img{
+    .rodape_cols{
+        margin-top: 4rem;
         width: 100%;
+        @include mixins.flex-fd-jc-fw( column, justify-content, wrap);
+        text-align: center;
+
+        .rodape_lista li{
+            border-bottom: 1px solid variaveis.$branco;
+            a{
+                padding: 1rem;
+                display: block;
+                color: variaveis.$branco;
+                font-family: variaveis.$font-padrao;
+                position: relative;
+                cursor: pointer;
+                
+                &:hover{
+                    color: variaveis.$vermelho;
+                }
+            }
+        }
+        .rodape_lista_item:last-child{
+            @include mixins.flex-fd-jc-fw(row, center, wrap);
+            gap: 1rem;
+            a{  
+                padding: 1.4rem;
+                height: 25px;
+                width: 25px;
+            }
+
+            .icons_social:nth-child(1){
+                background-image: url('../../assets/icons/github-32.png');
+                background-size: 26px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .icons_social:nth-child(2){
+                background-image: url('../../assets/icons/linkedin-32.png');
+                background-size: 26px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .icons_social:nth-child(3){
+                background-image: url('../../assets/icons/instagram-32.png');
+                background-size: 23px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
     }
     .logo_rodape{
         width: 120px;

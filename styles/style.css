@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .cabecalho {
   height: 4rem;
   width: 100%;
@@ -372,17 +376,59 @@
 
 .rodape {
   background-color: #000;
+}
+.rodape .rodape_cols {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: justify-content;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.rodape .rodape_cols .rodape_lista li {
+  border-bottom: 1px solid white;
+}
+.rodape .rodape_cols .rodape_lista li a {
+  padding: 1rem;
+  display: block;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+.rodape .rodape_cols .rodape_lista li a:hover {
+  color: #db3534;
+}
+.rodape .rodape_cols .rodape_lista_item:last-child {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  gap: 1rem;
 }
-.rodape div {
-  padding-top: 4rem;
+.rodape .rodape_cols .rodape_lista_item:last-child a {
+  padding: 1.4rem;
+  height: 25px;
+  width: 25px;
 }
-.rodape img {
-  width: 100%;
+.rodape .rodape_cols .rodape_lista_item:last-child .icons_social:nth-child(1) {
+  background-image: url("../../assets/icons/github-32.png");
+  background-size: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rodape .rodape_cols .rodape_lista_item:last-child .icons_social:nth-child(2) {
+  background-image: url("../../assets/icons/linkedin-32.png");
+  background-size: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rodape .rodape_cols .rodape_lista_item:last-child .icons_social:nth-child(3) {
+  background-image: url("../../assets/icons/instagram-32.png");
+  background-size: 23px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .rodape .logo_rodape {
   width: 120px;
