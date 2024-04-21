@@ -12,3 +12,10 @@ const btnMenu = document.getElementById('bt-menu');
 btnMenu.addEventListener( 'click', ()=> {
     btnMenu.classList.toggle('ativa');
 })
+
+window.addEventListener( 'scroll', ()=> {
+    const cabecalho = document.querySelector('.cabecalho');
+
+    console.log(cabecalho)
+    cabecalho.classList.toggle('sticky', window.scrollY > 0);
+})

@@ -10,10 +10,8 @@
     padding: .5rem 1rem;
     @include mixins.flex-fd-jc-fw(row, space-between, wrap);
     align-items: center;
-    background-color: #FFF;
-    box-shadow:0 4px 25px -15px rgba(88, 88, 88, 0.616);
-
-
+    background-color: transparent;
+    transition: 1s;
     .logo{
         width: 45px;
         transition: .5s;
@@ -37,9 +35,9 @@
         }
         
         .menu_navegacao{
+            background-color: transparent;
             position: fixed;
             top: 0;
-            background-color: variaveis.$vermelho;
             width: 100vw;
             height: 100vh;
             transition: 1s;
@@ -108,8 +106,10 @@
         }
     }
 }
-.container{
-    @include mixins.container();
+
+.sticky{
+    background-color: variaveis.$branco;
+    box-shadow:0 4px 25px -15px rgba(88, 88, 88, 0.616);
 }
 
 @media screen and (min-width: 768px) {
@@ -127,7 +127,6 @@
                 @include mixins.flex-fd-jc-fw(row-reverse, center, wrap);
                 align-items: center;
                 gap: 2rem;
-                background-color: variaveis.$branco;
 
                 .menu_login{
                     display: flex;
