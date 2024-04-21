@@ -15,7 +15,5 @@ btnMenu.addEventListener( 'click', ()=> {
 
 window.addEventListener( 'scroll', ()=> {
     const cabecalho = document.querySelector('.cabecalho');
-
-    console.log(cabecalho)
     cabecalho.classList.toggle('sticky', window.scrollY > 0);
 })

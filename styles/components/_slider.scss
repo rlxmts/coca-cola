@@ -1,3 +1,57 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
 .slider{
-    display: none;
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    .slider_caixa{
+        .caixa_img{
+            padding: 2rem;
+            display: block;
+            height: 400px;
+            width: 100%;
+            @include mixins.flex-fd-jc-fw( column, end, nowrap);
+            align-items: start;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            h2{
+                animation: surgindo 1s;
+                @include mixins.titulo();
+                color: variaveis.$branco;
+            }
+            p{
+                animation: surgindo 1s;
+                @include mixins.subtitulo-cl(variaveis.$branco);
+                text-align: start;
+                font-weight: 700;
+            }
+            a{
+                @include mixins.botao();
+                animation: surgindo 1s;
+            }
+            @keyframes surgindo {
+                0%{
+                    opacity: 0;
+                    transform: translatex(-20px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        .img1{
+            background-image: url('../../assets/img/game.png');
+            background-position:right;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .img2{
+            display: none;
+        }
+    }
 }

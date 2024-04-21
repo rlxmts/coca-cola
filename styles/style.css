@@ -14,6 +14,7 @@ body {
 }
 
 .cabecalho {
+  z-index: 1000000000;
   position: fixed;
   top: 0;
   left: 0;
@@ -166,6 +167,70 @@ body {
   }
 }
 .slider {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+}
+.slider .slider_caixa .caixa_img {
+  padding: 2rem;
+  display: block;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-wrap: nowrap;
+  align-items: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider .slider_caixa .caixa_img h2 {
+  animation: surgindo 1s;
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+.slider .slider_caixa .caixa_img p {
+  animation: surgindo 1s;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.4rem;
+  text-align: center;
+  text-align: start;
+  font-weight: 700;
+}
+.slider .slider_caixa .caixa_img a {
+  border: 1px solid #000;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  background-color: #000;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  animation: surgindo 1s;
+}
+@keyframes surgindo {
+  0% {
+    opacity: 0;
+    transform: translatex(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slider .slider_caixa .img1 {
+  background-image: url("../../assets/img/game.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider .slider_caixa .img2 {
   display: none;
 }
 
