@@ -58,6 +58,22 @@
         width: 120px; 
     } 
     .mao-lata{
-        display: none;
+        position: absolute;
+        right: -100%;
+        bottom: 0;
+    }
+    .ativa{
+        animation: maozinha 4s;
+    }
+    @keyframes maozinha {
+        0%{
+            right: -100%; 
+        }
+        50%{
+            right: 0;
+        }
+        100%{
+            right: -100%;
+        }
     }
 } 
