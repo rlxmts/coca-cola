@@ -59,6 +59,12 @@
         }
         .img2{
             display: none;
+            background-image: url('../../assets/img/tenis-mobile.png');
+            background-position:right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: end;
+            padding-top: 6rem;
         }
     }
 }
