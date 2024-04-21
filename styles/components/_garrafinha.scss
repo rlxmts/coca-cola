@@ -25,5 +25,32 @@
     }
     img{
         width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .garrafa-virtual{
+        @include mixins.flex-fd-jc-fw(row, normal, nowrap);
+        padding: 5rem 0;
+        div{
+            @include mixins.flex-fd-jc-fw(column, center, nowrap);
+            @include mixins.container-mobile();
+            align-items: start;
+
+            h2{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+                text-align: start;
+            }
+        }
+        img{
+            padding-right:13%;
+            width: 50%;
+            object-fit: contain;
+        }
     }
 }

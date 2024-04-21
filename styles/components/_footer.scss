@@ -2,6 +2,10 @@
 @use '../abstract/mixins';
 
 .rodape{
+
+    .wave-desktop{
+        display: none;
+    }
     .rodape_cols{
         padding-bottom: 14rem;
         margin-top: -5px;
@@ -78,3 +82,15 @@
         }
     }
 } 
+
+@media screen and (min-width: 768px) {
+
+    .rodape{
+        .wave-mobile{
+            display: none;
+        }
+        .wave-desktop{
+            display: block;
+        }
+    }
+}
