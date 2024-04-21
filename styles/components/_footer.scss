@@ -2,10 +2,11 @@
 @use '../abstract/mixins';
 
 .rodape{
-    background-color: variaveis.$preto;
-    padding-bottom: 14rem;
     .rodape_cols{
-        margin-top: 4rem;
+        padding-bottom: 14rem;
+        margin-top: -5px;
+        background-color: variaveis.$preto;
+        padding-top: 4rem;
         width: 100%;
         @include mixins.flex-fd-jc-fw( column, justify-content, wrap);
         text-align: center;

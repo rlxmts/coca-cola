@@ -28,3 +28,29 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .promocao{
+        @include mixins.flex-fd-jc-fw(row, normal, nowrap);
+        align-items: center;
+        div{
+            padding: 0;
+            @include mixins.flex-fd-jc-fw(column, center, nowrap);
+            width: 50%;
+            gap: 1.5rem;
+            width: 50%;
+            padding-left: 13%;
+            padding-right: 5%;
+
+            h3{
+                max-width: 450px;
+            }
+            a{
+                margin-top: 0;
+            }
+        }
+        img{
+            width: 50%;
+        }
+    }
+}

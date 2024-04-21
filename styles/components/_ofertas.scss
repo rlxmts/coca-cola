@@ -14,10 +14,25 @@
             @include mixins.titulo();
         }
         h4{
-            @include mixins.subtitulo-cl(variaveis.$preto)
+            @include mixins.subtitulo-cl(variaveis.$preto);
+            line-height: 2rem;
         }
         a{
             @include mixins.botao();
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .ofertas{
+        div{
+            h3{
+                font-size: 3rem;
+            }
+            h4{
+                font-size: 1.3rem;
+                max-width: 400px;
+            }
         }
     }
 }

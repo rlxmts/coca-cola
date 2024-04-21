@@ -3,8 +3,8 @@
 
 .home{
     @include mixins.flex-fd-jc-fw( column-reverse, normal, wrap);
+    width: 100vw;
     div{
-        width:100vw;
         img{
             max-width: 100%;
         }
@@ -16,7 +16,7 @@
     &_propaganda{
         @include mixins.flex-fd-jc-fw(column, normal, wrap);
         gap: 1rem;
-        padding: 5rem 1rem;
+        padding: 2rem 1rem;
         align-items: start;
 
         a{
@@ -29,6 +29,26 @@
         }
         span{
             font-size: .7rem;
+        }
+    }
+}
+
+
+//Quando a largura minima for 768px
+@media screen and (min-width: 768px) {
+    .home{
+        @include mixins.flex-fd-jc-fw(row, normal, nowrap);
+        align-items: center;
+        
+        &_propaganda{
+            @include mixins.container-mobile();
+            //@include mixins.flex-fd-jc-fw(column, center, nowrap);
+            p{
+                max-width: 450px;
+            }
+        }
+        &_img{
+            width: 50%;
         }
     }
 }

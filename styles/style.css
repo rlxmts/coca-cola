@@ -38,17 +38,18 @@ body {
   display: none;
 }
 .cabecalho .menu input:checked ~ .menu_navegacao {
-  right: 0;
+  top: 0;
 }
 .cabecalho .menu .menu_navegacao {
   position: absolute;
   top: 0;
   background-color: #db3534;
-  right: -120%;
+  top: -100%;
   width: 100vw;
   height: 100vh;
   transition: 1s;
   padding-top: 5rem;
+  left: 0;
 }
 .cabecalho .menu .menu_navegacao .menu_login {
   margin-bottom: 2rem;
@@ -122,8 +123,6 @@ body {
   flex-direction: column-reverse;
   justify-content: normal;
   flex-wrap: wrap;
-}
-.home div {
   width: 100vw;
 }
 .home div img {
@@ -139,7 +138,7 @@ body {
   justify-content: normal;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
   align-items: start;
 }
 .home_propaganda a {
@@ -159,6 +158,27 @@ body {
   font-size: 0.7rem;
 }
 
+@media screen and (min-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .home_propaganda {
+    gap: 1.5rem;
+    width: 50%;
+    padding-left: 13%;
+    padding-right: 5%;
+  }
+  .home_propaganda p {
+    max-width: 450px;
+  }
+  .home_img {
+    width: 50%;
+  }
+}
 .ofertas {
   background-color: #f1f1f1;
 }
@@ -187,6 +207,7 @@ body {
   color: #000;
   line-height: 1.4rem;
   text-align: center;
+  line-height: 2rem;
 }
 .ofertas div a {
   border: 1px solid #000;
@@ -198,6 +219,15 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .ofertas div h3 {
+    font-size: 3rem;
+  }
+  .ofertas div h4 {
+    font-size: 1.3rem;
+    max-width: 400px;
+  }
+}
 .propaganda {
   background-color: #000;
   color: white;
@@ -243,6 +273,22 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .propaganda {
+    padding-top: 4rem;
+    text-align: center;
+  }
+  .propaganda div {
+    align-items: center;
+  }
+  .propaganda div h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .propaganda img {
+    max-width: 500px;
+  }
+}
 .promocao {
   display: flex;
   flex-direction: column-reverse;
@@ -288,6 +334,36 @@ body {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .promocao {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .promocao div {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 50%;
+    gap: 1.5rem;
+    width: 50%;
+    padding-left: 13%;
+    padding-right: 5%;
+  }
+  .promocao div h3 {
+    max-width: 450px;
+  }
+  .promocao div a {
+    margin-top: 0;
+  }
+  .promocao img {
+    width: 50%;
+  }
+}
 .garrafa-virtual {
   background-color: #8cd5ae;
   width: 100%;
@@ -374,12 +450,11 @@ body {
   font-weight: 600;
 }
 
-.rodape {
-  background-color: #000;
-  padding-bottom: 14rem;
-}
 .rodape .rodape_cols {
-  margin-top: 4rem;
+  padding-bottom: 14rem;
+  margin-top: -5px;
+  background-color: #000;
+  padding-top: 4rem;
   width: 100%;
   display: flex;
   flex-direction: column;

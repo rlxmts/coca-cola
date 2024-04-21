@@ -5,7 +5,6 @@
     width: 90%;
     margin: 0 auto;
 }
-
 @mixin titulo(){
     font-family: variaveis.$font-titulos;
     font-size: 2rem;
@@ -37,4 +36,11 @@
     color: white;
     transition: .4s;
     cursor: pointer;
+}
+
+@mixin container-mobile(){
+    gap: 1.5rem;
+    width: 50%;
+    padding-left: 13%;
+    padding-right: 5%;
 }
