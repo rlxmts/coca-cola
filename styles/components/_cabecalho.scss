@@ -2,7 +2,6 @@
 @use '../abstract/mixins';
 
 .cabecalho{
-    position: sticky;
     height: 4rem;
     width: 100%;
     padding: .5rem 0;
@@ -14,7 +13,7 @@
         border-radius: 50%;
         border: 1px solid variaveis.$branco;
         z-index: 999;
-        position: fixed;
+        position: absolute;
         top: 10px;
         left: 25px;
         &:hover{
@@ -130,18 +129,23 @@
                 .menu_login{
                     display: flex;
                     margin: 0;
-                    a{
+                    a{  
                         display: flex;
                         align-items: center;
                         gap: 5px;
+                        border: 1px solid variaveis.$cinza;
+                        padding: .5rem;
+                        border-radius: 20px;
+                        transition: .5s;
                         span{
                             color: variaveis.$preto;
                             padding: 0%;
+                            font-size: .8rem;
                         }
                     }
                     .icone_login{
                         display: block;
-                        width: 20px;
+                        width: 15px;
                     }
                 }
                 .menu_lista{

@@ -14,7 +14,6 @@ body {
 }
 
 .cabecalho {
-  position: sticky;
   height: 4rem;
   width: 100%;
   padding: 0.5rem 0;
@@ -29,7 +28,7 @@ body {
   border-radius: 50%;
   border: 1px solid white;
   z-index: 999;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 25px;
 }
@@ -144,14 +143,19 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 0.5rem;
+    border-radius: 20px;
+    transition: 0.5s;
   }
   .cabecalho .menu .menu_navegacao .menu_login a span {
     color: #000;
     padding: 0%;
+    font-size: 0.8rem;
   }
   .cabecalho .menu .menu_navegacao .menu_login .icone_login {
     display: block;
-    width: 20px;
+    width: 15px;
   }
   .cabecalho .menu .menu_navegacao .menu_lista {
     display: flex;
