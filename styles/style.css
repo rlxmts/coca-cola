@@ -151,105 +151,21 @@ body {
     transition: 0.5s;
   }
   .cabecalho .menu .menu_navegacao .menu_login a span {
-    color: #000;
+    color: white;
     padding: 0%;
     font-size: 0.8rem;
   }
-  .cabecalho .menu .menu_navegacao .menu_login .icone_login {
-    display: block;
-    width: 15px;
+  .cabecalho .menu .menu_navegacao .menu_login .ativo {
+    color: #000;
   }
   .cabecalho .menu .menu_navegacao .menu_lista {
     display: flex;
   }
   .cabecalho .menu .menu_navegacao .menu_lista a {
+    color: white;
+  }
+  .cabecalho .menu .menu_navegacao .menu_lista .ativo {
     color: #000;
-  }
-}
-.slider {
-  position: relative;
-  width: 100vw;
-  height: 600px;
-}
-.slider .slider_caixa .caixa_img {
-  padding: 2rem;
-  display: block;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: start;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.slider .slider_caixa .caixa_img h2 {
-  animation: surgindo 1s;
-  font-family: "poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: white;
-}
-.slider .slider_caixa .caixa_img p {
-  animation: surgindo 1s;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  line-height: 1.4rem;
-  text-align: center;
-  text-align: start;
-  font-weight: 700;
-}
-.slider .slider_caixa .caixa_img a {
-  border: 1px solid #000;
-  padding: 0.7rem 1rem;
-  border-radius: 25px;
-  background-color: #000;
-  color: white;
-  transition: 0.4s;
-  cursor: pointer;
-  animation: surgindo 1s;
-}
-@keyframes surgindo {
-  0% {
-    opacity: 0;
-    transform: translatex(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.slider .slider_caixa .img1 {
-  background-image: url("../../assets/img/game-mobile.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: start;
-  padding-top: 6rem;
-}
-.slider .slider_caixa .img1 a {
-  margin-top: 1rem;
-  color: white;
-  background-color: #db3534;
-}
-.slider .slider_caixa .img2 {
-  display: none;
-  background-image: url("../../assets/img/tenis-mobile.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: end;
-  padding-top: 6rem;
-}
-
-@media screen and (min-width: 768px) {
-  .slider {
-    display: none;
   }
 }
 .home {
@@ -599,7 +515,7 @@ body {
   justify-content: normal;
   flex-wrap: wrap;
   gap: 2rem;
-  align-items: end;
+  align-items: start;
   color: white;
   padding: 3rem 0;
 }

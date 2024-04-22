@@ -14,7 +14,7 @@
         @include mixins.container();
         @include mixins.flex-fd-jc-fw(column, normal, wrap);
         gap: 2rem;
-        align-items: end;
+        align-items: start;
         color: variaveis.$branco;
         padding: 3rem 0;
         h3{

@@ -107,7 +107,6 @@
         }
     }
 }
-
 .sticky{
     background-color: variaveis.$branco;
     box-shadow:0 4px 25px -15px rgba(88, 88, 88, 0.616);
@@ -141,19 +140,21 @@
                         border-radius: 20px;
                         transition: .5s;
                         span{
-                            color: variaveis.$preto;
+                            color: variaveis.$branco;
                             padding: 0%;
                             font-size: .8rem;
                         }
                     }
-                    .icone_login{
-                        display: block;
-                        width: 15px;
+                    .ativo{
+                        color: variaveis.$preto;
                     }
                 }
                 .menu_lista{
                     display: flex;
                     a{
+                        color: variaveis.$branco;
+                    }
+                    .ativo{
                         color: variaveis.$preto;
                     }
                 }

@@ -15,5 +15,12 @@ btnMenu.addEventListener( 'click', ()=> {
 
 window.addEventListener( 'scroll', ()=> {
     const cabecalho = document.querySelector('.cabecalho');
+    const link = document.querySelectorAll('.item_link');
+    const btLogin = document.querySelector('.box_login span');
     cabecalho.classList.toggle('sticky', window.scrollY > 0);
+    btLogin.classList.toggle('ativo', window.scrollY > 0);
+    
+    link.forEach( (link)=> {
+        link.classList.toggle('ativo', window.scrollY > 0);
+    })
 })
