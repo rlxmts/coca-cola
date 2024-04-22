@@ -4,7 +4,6 @@ const imagemMao = document.getElementById('mao-lata');
 
 logo.addEventListener( 'click', ()=> {
     som.play();
-    imagemMao.classList.add('ativa');
 })
 
 const btnMenu = document.getElementById('bt-menu');
