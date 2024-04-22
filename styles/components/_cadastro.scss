@@ -5,7 +5,8 @@
     @include mixins.flex-fd-jc-fw(column-reverse, normal, wrap);
     width: 100%;
     background-color: variaveis.$vermelho;
-
+    margin-bottom: -3px;
+    
     img{
         width: 100%;
     }
