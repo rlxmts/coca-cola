@@ -1,4 +1,4 @@
-<h1>Clone Coca-Cola - Desenvolvido por Matheus Cruz</h1>
+<h1>Clone Coca-Cola - Projeto autoral.</h1>
 
 <h3>Olá! Tudo certo? Espero que sim!:D </h3>
 <div>
